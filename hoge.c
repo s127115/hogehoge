@@ -17,5 +17,7 @@ int main(void){
 
 	}
 	printf("Heads: %d, Tails %d\n",cnt,i-cnt-1);
+	if(cnt>i-int-1)	printf("You won\n");
+	else		printf("You lose\n");
 	return 0;
 }
