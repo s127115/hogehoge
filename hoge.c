@@ -3,19 +3,11 @@
 #include<time.h>
 
 int main(void){
-	int i,cnt=0;
+	char name[100];
 
-	srand((unsigned)time(NULL));
-	printf("Tossing a coin...\n");
+	printf("Who are you?\n> ");
+	scanf("%s",name);
+	printf("Hello, %s!\n",name);
 
-	for(i=1; i<=3; i++){
-		if(rand()%2) {
-			printf("Round %d: Heads\n",i);
-			cnt++;
-		}
-		else		printf("Round %d: Tails\n",i);
-
-	}
-	printf("Heads: %d, Tails %d\n",cnt,i-cnt-1);
 	return 0;
 }
